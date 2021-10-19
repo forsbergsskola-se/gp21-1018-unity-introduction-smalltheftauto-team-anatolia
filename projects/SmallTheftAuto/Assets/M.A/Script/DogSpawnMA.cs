@@ -5,16 +5,17 @@ using UnityEngine;
 public class DogSpawnMA : MonoBehaviour
 {
     public GameObject DogPrefab;
+    private GameObject DogInstance;
     
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        Instantiate(DogPrefab);
+       DogInstance = Instantiate(DogPrefab);
     }
 
     // Update is called once per frame
-    void Update()
+    void OnDisable()
     {
-        
+        Destroy(DogPrefab);
     }
 }
