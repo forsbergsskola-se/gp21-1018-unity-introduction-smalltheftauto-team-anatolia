@@ -15,19 +15,25 @@ public class PlayerMovementCSR : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0f, 0.1f, 0f);
+            transform.Translate(0f, 0.001f, 0f);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0f,-0.1f,0f);
+            transform.Translate(0f,-0.001f,0f);
         }
         
-        //This makes the player rotate to the left.
+        //rotira se na lijevo?.
         
+        //rotate to the left.
         if (Input.GetKey(KeyCode.Q))
         {
-            transform.Translate(0f,0f,0.3f);
+            transform.Rotate(0f, 0f, 0.03f);
+        }
+        //rotate to the right.
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(0f, 0f, -0.05f);
         }
         
     }
