@@ -30,7 +30,7 @@ public class PlayerMovementEU : MonoBehaviour
         //This makes the player rotate to the right.
         if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(0f, 0f, -0.5f);
+            transform.Rotate(0f, 0f, -0.3f);
         }
         //Makes the player move backwards.
         if (Input.GetKey(KeyCode.S))
