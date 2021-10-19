@@ -4,7 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class CarMovmentMA : MonoBehaviour
-{
+{       
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +15,17 @@ public class CarMovmentMA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0f, 5f*Time.deltaTime*Input.GetAxis("Vertical"), 0f);
-        transform.Translate(0f,-5f*Time.deltaTime*Input.GetAxis("Horizontal"),0f);
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(-0.1f,0f,0f);
+            
+        }
 
-        
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(0.1f,0f,0f);
         }
     }
+}
 
 
