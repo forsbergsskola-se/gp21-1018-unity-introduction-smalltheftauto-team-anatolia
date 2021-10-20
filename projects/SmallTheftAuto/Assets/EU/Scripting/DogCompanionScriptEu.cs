@@ -9,12 +9,12 @@ public class DogCompanionScriptEu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(DogPrefab);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Destroy(DogPrefab);
+       
     }
 }
