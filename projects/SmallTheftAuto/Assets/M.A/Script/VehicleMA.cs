@@ -17,13 +17,14 @@ public class VehicleMA : MonoBehaviour
             if (this.Player.activeInHierarchy)
             {
                 this.Player.SetActive(false);
-                this.CarMovmentMA.enabled = true;
+                GetComponent<CarMovmentMA>().enabled = true;
             }
             else
             {
                 this.Player.transform.position = this.transform.position;
                 this.Player.SetActive(true);
-                this.CarMovmentMA.enabled = false;
+                this.Player.GetComponent<PlayerMovmentMA>();
+                GetComponent<CarMovmentMA>().enabled = false;
             }
             
         }
