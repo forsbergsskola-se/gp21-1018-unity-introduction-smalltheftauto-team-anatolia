@@ -16,8 +16,8 @@ public class CarMovmentMA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(5f*Time.deltaTime*Input.GetAxis("Vertical"), 0f, 0f);
-        transform.Translate(-5f*Time.deltaTime*Input.GetAxis("Horizontal"),0f,0f);
+        transform.Translate(-5f*Time.deltaTime*Input.GetAxis("Vertical"), 0f, 0f);
+        transform.Translate(5f*Time.deltaTime*Input.GetAxis("Horizontal"),0f,0f);
         
         if (Input.GetKey(KeyCode.A))
         {
@@ -26,7 +26,7 @@ public class CarMovmentMA : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0f, 0f, 180f*Time.deltaTime);
+            transform.Rotate(0f, 0f, -180f*Time.deltaTime);
         }
         
     }

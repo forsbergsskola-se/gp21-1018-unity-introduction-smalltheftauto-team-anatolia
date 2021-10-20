@@ -16,6 +16,6 @@ public class DogSpawnMA : MonoBehaviour
     // Update is called once per frame
     void OnDisable()
     {
-        Destroy(DogPrefab);
+        
     }
 }
