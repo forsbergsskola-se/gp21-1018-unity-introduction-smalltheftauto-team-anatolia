@@ -11,7 +11,7 @@ public class PlayerMovementCSR : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetKey(KeyCode.W))
         {
@@ -26,14 +26,40 @@ public class PlayerMovementCSR : MonoBehaviour
         //rotira se na lijevo?.
         
         //rotate to the left.
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0f, 0f, 0.03f);
         }
         //rotate to the right.
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0f, 0f, -0.05f);
+        }
+        
+    }
+}*/
+
+    void Update()
+    {
+        
+        /*transform.Translate(1f*Time.deltaTime*Input.GetAxis("Horizontal"), 0f, 0f);
+            transform.Translate(0f, 1f*Time.deltaTime*Input.GetAxis("Vertical"), 0f);*/
+            
+        
+        
+        transform.Translate(0f, 5f*Time.deltaTime*Input.GetAxis("Vertical"), 0f);
+        transform.Translate(0f,-5f*Time.deltaTime*Input.GetAxis("Horizontal"),0f);
+        
+        
+        //rotate to the left.
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0f, 0f, 0.01f*Time.deltaTime);
+        }
+        //rotate to the right.
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0f, 0f, -0.01f*Time.deltaTime);
         }
         
     }
