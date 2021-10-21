@@ -10,7 +10,7 @@ public class VehicleEU : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (this.player.activeInHierarchy)
+            if (PlayerinCar())
             {
                 GetinCar();
             }
@@ -22,6 +22,11 @@ public class VehicleEU : MonoBehaviour
                 GetComponent<CarMovementEU>().enabled = false;
             }
         }
+    }
+
+    private bool PlayerinCar()
+    {
+        return this.player.activeInHierarchy;
     }
 
     private void GetinCar()
