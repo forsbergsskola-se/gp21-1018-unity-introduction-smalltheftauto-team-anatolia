@@ -21,12 +21,12 @@ public class CarMovmentMA : MonoBehaviour
         
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0f, 0f, 180f*Time.deltaTime);
+            transform.Rotate(0f, 0f, -180f*Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0f, 0f, -180f*Time.deltaTime);
+            transform.Rotate(0f, 0f, 180f*Time.deltaTime);
         }
         
     }
