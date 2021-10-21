@@ -1,29 +1,41 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimerMA : MonoBehaviour
 {
-    public int countdownTime;
-    public Text countdownDisplay;
-
-    private void Start()
+    public float timeValue = 90;
+    public Text timeText;
+    void Start()
     {
-        StartCoroutine(countdownToStart());
+        
     }
 
-    IEnumerator countdownToStart()
+    // Update is called once per frame
+    void Update()
     {
-        while (countdownTime>0)
+        if (timeValue>0)
         {
-            countdownDisplay.text = countdownTime.ToString();
-            yield return new WaitForSeconds(1f);
-            countdownTime--;
+            timeValue -= Time.deltaTime;
+        }
+        else
+        {
+            timeValue = 0;
+        }
+        DisplayTime(timeValue);
+    }
+
+    void DisplayTime(float timeToDisplay)
+    {
+        if (timeToDisplay<0)
+        {
+            timeToDisplay = 0;
         }
 
-        countdownDisplay.text = "Go!";
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
