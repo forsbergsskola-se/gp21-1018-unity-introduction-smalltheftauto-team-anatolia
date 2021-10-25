@@ -904,6 +904,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348560949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &359066282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 317165746143855700, guid: bc2233b960805da4cbd2bf8b904f0ea2, type: 3}
+  m_PrefabInstance: {fileID: 1023990516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &359066287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 317165746143855688, guid: bc2233b960805da4cbd2bf8b904f0ea2, type: 3}
+  m_PrefabInstance: {fileID: 1023990516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &359066288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359066282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e546f31949d458548bc947460f4012dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 699173737}
+  bulletPrefab: {fileID: 652951701933444517, guid: f3026c5ec3235364c9a98b4abef03ac5, type: 3}
+  bulletForce: 20
 --- !u!1 &376996780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,6 +1572,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602432920}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &699173736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699173737}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699173737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699173736}
+  m_LocalRotation: {x: 0.000000015832297, y: 7.7501144e-11, z: -0.9999881, w: 0.004895179}
+  m_LocalPosition: {x: 0.045374803, y: 0.93692786, z: -0.6199999}
+  m_LocalScale: {x: 0.4749276, y: 0.26610026, z: 1}
+  m_Children: []
+  m_Father: {fileID: 359066287}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781316436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,6 +2359,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9ae09722e6172f94499a2db14c65f7ec, type: 2}
+    - target: {fileID: 317165746143855691, guid: bc2233b960805da4cbd2bf8b904f0ea2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 317165746143855700, guid: bc2233b960805da4cbd2bf8b904f0ea2, type: 3}
       propertyPath: m_Name
       value: Tank
