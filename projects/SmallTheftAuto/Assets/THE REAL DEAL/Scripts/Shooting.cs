@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,13 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public float bulletForce = 1f;
+    public float bulletForce = 50f;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
