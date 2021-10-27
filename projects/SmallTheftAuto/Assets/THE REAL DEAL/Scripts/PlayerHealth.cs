@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
 
     public Text healthText;
     public float health;
-    public PlayerMovement PM;
+    public PLayerMovement PM;
     public EnemyDamage ED;
     public GameObject Player;
 
