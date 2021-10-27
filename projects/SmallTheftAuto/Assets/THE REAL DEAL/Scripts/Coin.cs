@@ -19,9 +19,9 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.name == "Tank")
         {
-            other.GetComponent<PlayerMovement>().points++;
+            other.GetComponent<CarMovementYY>().points++;
             Destroy(gameObject);
         }
     }
