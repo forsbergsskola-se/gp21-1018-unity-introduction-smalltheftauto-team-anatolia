@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,15 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", true);
         }
 =======
+        transform.Translate(0f, -5f * Time.deltaTime * Input.GetAxis("Vertical"), 0f);
+>>>>>>> d9f41b07b7928f00982a37735513afe263a7c109
+=======
+    public int points = 0;
+    public bool isHitting;
+    
+
+    void Update()
+    {
         transform.Translate(0f, -5f * Time.deltaTime * Input.GetAxis("Vertical"), 0f);
 >>>>>>> d9f41b07b7928f00982a37735513afe263a7c109
 

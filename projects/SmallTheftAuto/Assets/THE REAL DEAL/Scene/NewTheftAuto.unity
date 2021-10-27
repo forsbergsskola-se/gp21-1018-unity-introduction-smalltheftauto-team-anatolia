@@ -1912,7 +1912,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 940670e8a29751a4caf11b22ed120bc2, type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -4.53
+=======
+      value: -6.295
+>>>>>>> d9f41b07b7928f00982a37735513afe263a7c109
 =======
       value: -6.295
 >>>>>>> d9f41b07b7928f00982a37735513afe263a7c109
