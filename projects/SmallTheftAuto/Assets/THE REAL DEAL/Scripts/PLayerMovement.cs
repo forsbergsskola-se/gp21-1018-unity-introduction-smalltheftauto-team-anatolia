@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int points = 0;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.Translate(0f, -5f*Time.deltaTime*Input.GetAxis("Vertical"), 0f);
@@ -24,5 +25,9 @@ public class PLayerMovement : MonoBehaviour
         {
             transform.Rotate(0f, 0f, 180f * Time.deltaTime);
         }
+    }
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(-256,172,160,30),"Coin : " + points);
     }
 }
