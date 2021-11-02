@@ -21,7 +21,7 @@ public class PlayerMovmentMA : MonoBehaviour
         Hitpoints -= damage;
         if (Hitpoints<=0)
         {
-            Destroy(gameObject);
+            
         }
     }
 
