@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnterVechicle : MonoBehaviour
 {
     public GameObject Player;
-    public CarMovementYY CarMovementYY;
+    public CarMovement CarMovement;
 
     void Start()
     {
@@ -20,14 +20,14 @@ public class EnterVechicle : MonoBehaviour
             if (this.Player.activeInHierarchy)
             {
                 this.Player.SetActive(false);
-                GetComponent<CarMovementYY>().enabled = true;
+                GetComponent<CarMovement>().enabled = true;
             }
             else
             {
                 this.Player.transform.position = this.transform.position;
                 this.Player.SetActive(true);
-                this.Player.GetComponent<PlayerMovementYY>();
-                GetComponent<CarMovementYY>().enabled = false;
+                this.Player.GetComponent<CarMovement>();
+                GetComponent<CarMovement>().enabled = false;
             }
         }
     }
