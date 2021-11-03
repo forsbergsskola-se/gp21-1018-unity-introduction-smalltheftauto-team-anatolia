@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CarMovementYY : MonoBehaviour
 {
-    public int points = 0;
     void Update()
     {
         transform.Translate(0f, 5f*Time.deltaTime*Input.GetAxis("Vertical"), 0f);
@@ -18,10 +17,10 @@ public class CarMovementYY : MonoBehaviour
         {
             transform.Rotate(0f,0f,-180f*Time.deltaTime);
         }
-    }
 
-    private void OnGUI()
-    {
-        GUI.Label(new Rect(-256,172,160,30),"Coin : " + points);
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            transform.Translate(0f, 15 * Time.deltaTime * Input.GetAxis("Vertical"), 0f);
+        }
     }
 }

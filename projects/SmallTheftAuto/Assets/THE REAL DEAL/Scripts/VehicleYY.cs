@@ -3,24 +3,33 @@ using UnityEngine;
 public class VehicleYY : MonoBehaviour
 {
     public GameObject player;
-    public CarMovementYY carMovementYY;
-
-    private void Update()
+    public CarMovementYY carMovement;
+    void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            if (this.player.activeInHierarchy) {
-                this.player.SetActive(false);
-                this.carMovementYY.enabled = true;
-                FindObjectOfType<FollowTarget>().Target = transform;
+            if (PlayerinCar())
+            {
+                GetinCar();
             }
             else
             {
                 this.player.transform.position = this.transform.position;
                 this.player.SetActive(true);
-                this.carMovementYY.enabled = false;
-                FindObjectOfType<FollowTarget>().Target = player.transform;
+                this.player.GetComponent<PLayerMovement>();
+                GetComponent<CarMovementYY>().enabled = false;
             }
         }
+    }
+
+    private bool PlayerinCar()
+    {
+        return this.player.activeInHierarchy;
+    }
+
+    private void GetinCar()
+    {
+        this.player.SetActive(false);
+        this.carMovement.enabled = true;
     }
 }
