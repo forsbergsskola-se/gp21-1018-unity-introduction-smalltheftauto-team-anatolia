@@ -873,6 +873,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 317165746143855700, guid: fa8701d8abc711c4ab86e6efd29a9934, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 317165746143855695, guid: fa8701d8abc711c4ab86e6efd29a9934, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa8701d8abc711c4ab86e6efd29a9934, type: 3}
@@ -2648,6 +2652,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473622486}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &480586724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6973050079748534274, guid: 277272980b501174692b8f34f4253411, type: 3}
+  m_PrefabInstance: {fileID: 6973050080510082859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &480586732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480586724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce21aa63277ce8408685561a471b906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  minDist: 1
+  target: {fileID: 715362120}
 --- !u!1 &505026574
 GameObject:
   m_ObjectHideFlags: 0
@@ -9698,7 +9722,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 513023504703413715, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 513023504703413715, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: mask.m_Bits
@@ -9714,7 +9738,7 @@ PrefabInstance:
       objectReference: {fileID: 715362123}
     - target: {fileID: 6973050079748534272, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6973050079748534272, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: healthText
@@ -9722,7 +9746,7 @@ PrefabInstance:
       objectReference: {fileID: 374769248}
     - target: {fileID: 6973050079748534273, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6973050079748534274, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: m_Name
