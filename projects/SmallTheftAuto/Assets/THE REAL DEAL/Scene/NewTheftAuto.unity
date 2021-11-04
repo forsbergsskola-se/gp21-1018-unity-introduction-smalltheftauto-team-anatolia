@@ -2870,9 +2870,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce21aa63277ce8408685561a471b906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1
   minDist: 1
-  target: {fileID: 0}
+  target: {fileID: 715362120}
 --- !u!1 &505026574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,19 +3889,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &715362123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715362115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aae601109bcf3e249a1bc7f2c3a62512, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
 --- !u!114 &715362124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6827,7 +6814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 715362115}
-  carMovement: {fileID: 0}
+  carMovement: {fileID: 1339781452}
 --- !u!114 &1339781452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10248,7 +10235,7 @@ PrefabInstance:
     - target: {fileID: 6973050079748534272, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: ED
       value: 
-      objectReference: {fileID: 715362123}
+      objectReference: {fileID: 0}
     - target: {fileID: 6973050079748534272, guid: 277272980b501174692b8f34f4253411, type: 3}
       propertyPath: m_Enabled
       value: 0
