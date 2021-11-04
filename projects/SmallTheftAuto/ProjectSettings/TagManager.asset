@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Enemie
+  - Death
   layers:
   - Default
   - TransparentFX

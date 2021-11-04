@@ -9,7 +9,7 @@ public class Colliding : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("NewTheftAuto");
+            SceneManager.LoadScene("THE REAL DEAL/Scene/NewTheftAuto");
         }
     }
 }
