@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class Colliding : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("THE REAL DEAL/Scene/NewTheftAuto");
+            Console.WriteLine(UInt32.MaxValue);
         }
     }
 }
