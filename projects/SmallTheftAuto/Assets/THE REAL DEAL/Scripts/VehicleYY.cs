@@ -22,6 +22,7 @@ public class VehicleYY : MonoBehaviour
         }
     }
 
+    // TODO: Fix spelling PlayerIn instead of Playerin
     private bool PlayerinCar()
     {
         return this.player.activeInHierarchy;

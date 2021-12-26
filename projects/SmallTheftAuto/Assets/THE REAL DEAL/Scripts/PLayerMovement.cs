@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: Fix spelling Pl instead of PL
 public class PLayerMovement : MonoBehaviour
 {
     public int coin = 0;
-    public bool isHitting;
+    public bool isHitting; // TODO: value is assigned, but never used
     
 
     void Update()

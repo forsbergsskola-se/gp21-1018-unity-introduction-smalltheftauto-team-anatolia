@@ -14,10 +14,12 @@ public class Enemy : MonoBehaviour
     {
         if (targetTransform != null)
         {
+            // TODO: Smart, simple traffic script
             this.transform.position = Vector3.MoveTowards(this.transform.position, targetTransform.transform.position, Time.deltaTime * moveSpeed);
         }
     }
 
+    // TODO: Too bad that this wasn't finished (used by other components) :(
     public void TakeDamage(int damage)
     {
         health -= damage;
