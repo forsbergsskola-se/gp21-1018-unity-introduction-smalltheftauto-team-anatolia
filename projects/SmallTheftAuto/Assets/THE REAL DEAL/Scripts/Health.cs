@@ -18,6 +18,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // TODO: Nice debug function, but not enough for the final game
         if (Input.GetKeyDown(KeyCode.Z))        //every time you press Z it will take damage
         {
             TakeDamage(20);
@@ -27,7 +28,7 @@ public class Health : MonoBehaviour
     private void TakeDamage(int damage)     //Made a Method of taking damage
     {
         currentHealth -= damage;
-        
+        // TODO: Player does not die if health is 0
         healthBar.SetHealth(currentHealth);
     }
 }

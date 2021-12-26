@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// TODO: Don't name Scripts as XXXScript. It's quite obvious that Scripts are Scripts. Else, all your classes would be named Script.
 public class HealthbarScript : MonoBehaviour
 {
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: Fix spelling: Waypoints instead of waypoints
 public class waypoints : MonoBehaviour
 {
     public float speed;

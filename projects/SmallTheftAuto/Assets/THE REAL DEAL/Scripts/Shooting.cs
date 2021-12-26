@@ -24,6 +24,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        // TODO: nice clean code! :)
         GameObject bullet =Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody rb= bullet.GetComponent<Rigidbody>();
         rb.AddForce(firePoint.up*bulletForce,ForceMode.Impulse);
